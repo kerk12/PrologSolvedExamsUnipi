@@ -14,6 +14,7 @@ is_it_hot(T) :-
     nl,
 	get_input().
 
+% Neither hot or cold...
 is_it_hot(T) :-
     get_input().
 

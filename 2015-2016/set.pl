@@ -1,10 +1,15 @@
+/*
+  Taken from:
+  http://stackoverflow.com/questions/20256667/prolog-removing-duplicates#20264879
+*/
+
 % An empty list is a set.
 set([], []).
 
 % Put the head in the result,
 % remove all occurrences of the head from the tail,
 % make a set out of that.
-set([H|T], [H|T1]) :- 
+set([H|T], [H|T1]) :-
     remv(H, T, T2),
     set(T2, T1).
 

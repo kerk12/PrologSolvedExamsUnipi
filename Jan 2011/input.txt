@@ -1,0 +1,3 @@
+prolog_is_awesome.
+not(prolog_is_awesome).
+i_need_to_learn_it.
